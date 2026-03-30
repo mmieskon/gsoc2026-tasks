@@ -47,4 +47,8 @@ example in this case running the following command gives 18 entries.
 
 ## Task 3: Find a few fixers from lintian-brush that operate on the same files
 
-**TODO**
+The following fixers all operate on `debian/control` files.
+
+* ancient_python_version_field
+* binary_control_field_duplicates_source
+* vcs_broken_uri
