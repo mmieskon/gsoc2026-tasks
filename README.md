@@ -42,8 +42,9 @@ With some testing, it seems that opening files are done specifically with the
 bunch of `openat` calls with arguments to open the debian package files. For
 example in this case running the following command gives 18 entries.
 
-`strace --trace=openat lintian-brush &>/dev/stdout | grep debian/control`
-
+```
+strace --trace=openat lintian-brush &>/dev/stdout | grep debian/control
+```
 
 ## Task 3: Find a few fixers from lintian-brush that operate on the same files
 
